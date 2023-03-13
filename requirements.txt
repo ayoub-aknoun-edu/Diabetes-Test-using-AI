@@ -1,0 +1,9 @@
+asgiref
+Django
+joblib
+numpy
+pytz
+scikit-learn
+scipy
+sqlparse
+threadpoolctl

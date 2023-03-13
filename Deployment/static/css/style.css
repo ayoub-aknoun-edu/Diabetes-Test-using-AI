@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.247);
+}
+
+#hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+  font-family: "object-fit: cover";
+}
+
+#hero .texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: url("../texture.png");
+}
+
+#hero .content {
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#hero .content:hover {
+  backdrop-filter: blur(3rem);
+}
+
+#hero .content h1 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 5em;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#hero .content h3 {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.btn, .again-btn {
+  width: 7rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-style: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #00000069;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover , .again-btn:hover {
+  color: #ffffff;
+  background-color: #4696dd;
+  transform: scale(1.1);
+}
+
+.again-btn{
+      width: 15rem;
+      margin-bottom: qrem;
+}
+.results-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.results .title{
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+}
+.results-content h1{
+font-family: "Roboto", sans-serif;
+    color:  #007deb;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: 2rem 5rem;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 4rem;
+
+}
+
+@media screen and (min-width: 768px) {
+  #hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero .content h1 {
+    font-size: 3rem;
+  }
+
+  #hero .content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .content h1 {
+    font-size: 4rem;
+  }
+
+  #hero .content h2 {
+    font-size: 2.5rem;
+  }
+}

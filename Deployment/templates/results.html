@@ -1,0 +1,45 @@
+{% load static %} {% csrf_token %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diabetes Ai Test</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'form.css' %}" />
+
+    <script src="{% static 'object-fit-videos.js' %}"></script>
+    <script src="{% static 'app.js' %}"></script>
+  </head>
+
+  <body>
+    <div id="hero">
+      <video loop muted autoplay preload="auto">
+        <source src="{% static 'video.mp4' %}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div id="results" class="form-box">
+        <div class="title">
+          <h1>RESULTS</h1>
+        </div>
+        <div class="results-content">
+          <center>
+            <h1><b>{{ result }}</b></h1>
+            <br />
+            <a href="/">
+              <button class="again-btn">Test Again</button>
+            </a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
